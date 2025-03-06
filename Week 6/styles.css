@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: bisque;
+  color: black;
+}
+
+#links {
+  display: flex;
+  gap: 2em;
+}
+
+#about {
+  padding: 30vh;
+  background-color: burlywood;
+}
+
+#projects {
+  padding: 30vh;
+  background-color: darkgoldenrod;
+}
+
+#skills {
+  padding: 30vh;
+  background-color: rgb(51, 0, 0);
+  color: white;
+}
+
+footer {
+  background-color: rgb(35, 33, 33);
+  color: White;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: greenyellow;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: blue;
+  }
+}
