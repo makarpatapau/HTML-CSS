@@ -20,25 +20,3 @@ input {
   border-radius: 5px;
   border: 1px solid #eee;
 }
-
-div {
-  margin: 20px;
-}
-
-header,
-footer {
-  padding: 1 rem 4 rem;
-  width: 100%;
-}
-header .container {
-  dispaly: flex;
-}
-
-text-transform: uppercase;
-
-this is links:
- display: inline block;
- margin: 1 rem; 
- text-decoration: none;
- a: hover text-decoration: underline;
- 
