@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +23,7 @@ header {
 
 #links {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
 }
 
 #about {
@@ -41,8 +50,55 @@ footer {
   justify-content: space-between;
 }
 
-html {
-  scroll-behavior: smooth;
+.btn {
+  background-color: pink;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.closebtn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.closebtn:hover {
+  background-color: gray;
 }
 
 @media (max-width: 1200px) {
@@ -61,4 +117,7 @@ html {
   body {
     background-color: blue;
   }
+}
+#logo {
+  text-decoration: none;
 }
