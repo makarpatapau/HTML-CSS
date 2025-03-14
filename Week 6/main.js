@@ -1,6 +1,7 @@
 const button = document.querySelector(".btn");
 const overlay = document.querySelector(".overlay");
-const modalButton = document.querySelector("#closebtn");
+const modalButton = document.querySelector(".closebtn");
+const seeMoreButton = document.querySelector(".seeMore");
 
 window.onscroll = function () {
   // the button unvisible, and in css we need to add in css display: none and position, top, right
@@ -29,3 +30,4 @@ const topMe = () => {
 
 button.addEventListener("click", topMe);
 modalButton.addEventListener("click", displayElement);
+seeMoreButton.addEventListener("click", displayElement);
